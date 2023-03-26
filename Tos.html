@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Terms of Service</title>
+    <link rel="stylesheet" href="TosCSS.css"></link>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		.btn {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		.btn:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Terms of Service</h1>
+		<p>Please read these terms and conditions carefully before using our website.</p>
+		<h2>1. Acceptance of Terms</h2>
+		<p>By accessing or using this website, you agree to be bound by these terms and conditions. If you do not agree to these terms and conditions, you may not use this website.</p>
+		<h2>2. Use of the Website</h2>
+		<p>You may use the website only for lawful purposes and in accordance with these terms and conditions.</p>
+		<h2>3. Modifications to Terms</h2>
+		<p>We may revise and update these terms and conditions at any time without notice. Your continued use of the website following the posting of revised terms means that you accept and agree to the changes.</p>
+		<div>
+			<input type="checkbox" id="accept"> <label for="accept">I have read and accept the Terms of Service</label>
+		</div>
+		<button class="btn" onclick="acceptTerms()">Accept</button>
+	</div>
+	<script>
+		function acceptTerms() {
+			if (document.getElementById("accept").checked) {
+				window.location.href = "http://127.0.0.1:3000/main.html";
+			} else {
+				alert("Please accept the Terms of Service to continue.");
+			}
+		}
+	</script>
+</body>
+</html>

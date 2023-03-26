@@ -1,0 +1,239 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: #6f00ff;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f00ff54;
+    padding: 10px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    opacity: 0; /* start with 0 opacity */
+    animation: fadeIn 1s forwards; /* apply animation */
+  }
+  
+  header h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  /* Define animation keyframes */
+  @keyframes fadeIn {
+    from {
+       transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(111,0,255,0.6), rgba(111,0,255,0.2)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    animation-name: slideInRight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+        
+        transform:-100%;
+      opacity: 0;
+    }
+    to {
+        transform:0%;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  
+ 
+  #get-started-btn {
+    background-color: #6f00ff;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  #get-started-btn:hover {
+    background-color: #5a00cc;
+  }
+  
+
+  #pre {
+    position: fixed;
+    margin-bottom: 20%;
+    left: 20px;
+    background-color: #ffd900;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  #pre:hover {
+    background-color: #e4c200;
+  }
+
+  #logos {
+    margin-top:-15%;
+    z-index: -10;
+  }
+
+  
+  
+  
+  /* Games section styles */
+  .games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  
+  .game {
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .game img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .game h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .game p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #6f00ff54;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  #popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    z-index: 9999;
+    display: none;
+  }
+  
+  #close-popup {
+    display: block;
+    margin: 20px auto 0;
+  }
+  
+  
