@@ -180,11 +180,15 @@
  .light-mode {
   background-color: #ffffff;
   color: #000000;
+     float:left;
 }
 
 .dark-mode {
   background-color: #000000;
   color: #ffffff;
+    
+   float:left;
+
 }
 
   /* Games section styles */
