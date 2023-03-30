@@ -219,6 +219,15 @@
     font-size: 14px;
     margin-bottom: 20px;
   }
+
+.game-description-light {
+  color: black;
+}
+
+.game-description-dark {
+  color: white;
+}
+
   
   /* Footer styles */
   footer {
