@@ -5,7 +5,7 @@ const darkElements = document.querySelectorAll('.dark-element');
 
 toggleSwitch.addEventListener('change', function() {
   if (this.checked) {
-    body.classList.add('dark-mode');
+    body.classList.remove('dark-mode');
     body.classList.remove('light-mode');
     gameDescription.classList.add('game-description-light');
     gameDescription.classList.remove('game-description-dark');
