@@ -260,12 +260,42 @@
 
 .sponsored {
   position: relative;
-}
+ animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+        
+        transform:translateY(-100%) ;
+      opacity: 0;
+    }
+    to {
+        transform:translateY(0);
+      opacity: 1;
+    }
+  }
 
 .sponsored img {
   width: 100%;
    height: 600px;
-}
+ animation-name: fadeIn2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeIn2 {
+    from {
+        
+        transform:translateY(-100%) ;
+      opacity: 0;
+    }
+    to {
+        transform:translateY(0);
+      opacity: 1;
+    }
+  }
 
 .sponsored .text {
   position: absolute;
