@@ -63,3 +63,103 @@ input[type="checkbox"]:checked + label:before {
     font-size: 16px;
     text-align: center;
 }
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%;
+    padding: 10px;
+  }
+  
+  h1, h2 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  
+  input[type="checkbox"] + label:before {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border-width: 1px;
+  }
+  
+  input[type="checkbox"]:checked + label:before {
+    font-size: 14px;
+  }
+}
+
+/* Default styles for all screens */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1cfff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+h1, h2 {
+  color: #6f00ff;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.btn {
+  background-color: #6f00ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #400080;
+}
+
+input[type="checkbox"] + label {
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 2px solid #6f00ff;
+  border-radius: 4px;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: '\2714';
+  color: #6f00ff;
+  font-size: 16px;
+  text-align: center;
+}
+
