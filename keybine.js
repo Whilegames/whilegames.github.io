@@ -8,6 +8,14 @@ document.getElementById("emergency-link-save-btn").addEventListener("click", fun
   var link = document.getElementById("emergency-link-input").value;
   emergencyLink = link;
   document.getElementById("emergency-link-input-container").style.display = "none";
+  
+  // Show "Saved" message for 2 seconds
+  var messageContainer = document.getElementById("message-container");
+  messageContainer.innerText = "Saved";
+  messageContainer.style.display = "block";
+  setTimeout(function() {
+    messageContainer.style.display = "none";
+  }, 2000);
 });
 
 document.addEventListener("keydown", function(event) {
