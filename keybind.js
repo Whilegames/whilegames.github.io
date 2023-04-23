@@ -1,22 +1,17 @@
-// Get the input field and submit button
-var inputField = document.getElementById("input-field");
-var submitButton = document.getElementById("submit-button");
+var emergencyLink = "";
 
-// Add event listener for the Enter key press
-inputField.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    // Trigger the button click event
-    submitButton.click();
-  }
+document.getElementById("emergency-link-btn").addEventListener("click", function() {
+  document.getElementById("emergency-link-input-container").style.display = "block";
 });
 
-// Add event listener for the Ctrl + A key press
+document.getElementById("emergency-link-save-btn").addEventListener("click", function() {
+  var link = document.getElementById("emergency-link-input").value;
+  emergencyLink = link;
+  document.getElementById("emergency-link-input-container").style.display = "none";
+});
+
 document.addEventListener("keydown", function(event) {
-  if (event.ctrlKey && event.keyCode === 65) {
-    // Get the input value and redirect to the URL
-    var inputValue = inputField.value;
-    if (inputValue !== "") {
-      window.location.href = inputValue;
-    }
+  if (event.ctrlKey && event.key === "a") {
+    window.location.href = emergencyLink;
   }
 });
