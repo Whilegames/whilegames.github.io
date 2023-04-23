@@ -374,6 +374,10 @@ padding: 10px 20px;
 header h1 {
 font-size: 24px;
 }
+    
+  logos {
+    display:none;
+  }
 
 nav ul {
 flex-direction: column;
@@ -397,6 +401,18 @@ font-weight: normal;
 letter-spacing: 0.5px;
 }
 
+  #logos {
+    display: none;
+  }
+
+
+  #pre {
+    display: none;
+  }
+
+  .sponsored {
+    display: none;
+  }
 /* Open the navigation menu when the checkbox is checked */
 input[type="checkbox"]:checked ~ nav ul {
 height: auto;
