@@ -257,43 +257,7 @@
     display: block;
     margin: 20px auto 0;
   }
-#link-menu {
-        display: none;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        padding: 10px;
-      }
 
-      #link-menu.active {
-        display: block;
-      }
-
-      #link-menu label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-      }
-
-      #link-menu input[type="text"] {
-        width: 100%;
-        margin-bottom: 10px;
-        padding: 5px;
-        border: 1px solid #ccc;
-        font-size: 16px;
-      }
-
-      #link-menu button[type="submit"] {
-        background-color: #4CAF50;
-        color: #fff;
-        padding: 5px 10px;
-        border: none;
-        font-size: 16px;
-        cursor: pointer;
-      }
-    
 
 .sponsored {
   position: relative;
