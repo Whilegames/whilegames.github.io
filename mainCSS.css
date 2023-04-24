@@ -267,6 +267,7 @@
   border-radius: 5px;
   font-size: 16px;
   position:fixed;
+  margin-bottom:80%;
   transition: background-color 0.3s ease-in-out;
 }
 
