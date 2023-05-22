@@ -84,6 +84,14 @@
 		</div>
 		<button class="btn" onclick="acceptTerms()">Accept</button>
 	</div>
+	<script src="https://www.google.com/recaptcha/enterprise.js?render=6LfIdSsmAAAAADHt4724e71SvYhIK1PUt8hfdMDK"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6LfIdSsmAAAAADHt4724e71SvYhIK1PUt8hfdMDK', {action: 'login'}).then(function(token) {
+       ...
+    });
+});
+</script>
 	<script>
 		function acceptTerms() {
 			if (document.getElementById("accept").checked) {
@@ -93,5 +101,6 @@
 			}
 		}
 	</script>
+	
 </body>
 </html>
